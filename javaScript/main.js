@@ -24,26 +24,3 @@ document.getElementById('contact-form')?.addEventListener('submit', (e) => {
     e.target.reset();
 });
 
-
-// async function loadBlogPosts() {
-//     try {
-//         // const response = await fetch('/api/blog-posts');
-//         const posts = await response.json();
-//         const container = document.getElementById('blog-posts');
-        
-//         posts.forEach(post => {
-//             container.innerHTML += `
-//                 <div class="blog-post">
-//                     <h3>${post.title}</h3>
-//                     <div class="publish-date">Published on ${post.date}</div>
-//                     <div class="excerpt">${post.excerpt}</div>
-//                     <a href="/blog/${post.slug}" class="read-more">Read more →</a>
-//                 </div>
-//             `;
-//         });
-//     } catch (error) {
-//         console.error('Error loading blog posts:', error);
-//     }
-// }
-
-// document.addEventListener('DOMContentLoaded', loadBlogPosts);

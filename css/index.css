@@ -157,3 +157,38 @@ footer {
     font-size: 16px;
     color: #666;
 }
+
+
+
+.blog-post {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.blog-post h3 {
+    margin-top: 0;
+    /* color: #0077cc; */
+}
+
+.publish-date {
+    color: #666;
+    font-size: 14px;
+    margin: 5px 0 15px;
+}
+
+.excerpt {
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
