@@ -192,3 +192,64 @@ footer {
 .read-more:hover {
     text-decoration: underline;
 }
+
+
+:root {
+    --space-dark: #0a0a1a;
+    --star-light: #e0e0ff;
+    --planet-blue: #0077cc;
+    --nebula-purple: #6600cc;
+}
+
+body.cosmic-theme {
+    background-color: var(--space-dark);
+    color: var(--star-light);
+    font-family: 'Courier New', monospace;
+    padding: 2rem;
+    background-image: radial-gradient(circle, #ffffff08 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+header h1 {
+    color: var(--star-light);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.orbit-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 3rem 0;
+}
+
+.nav-planet {
+    display: block;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 50%;
+    text-align: center;
+    background: radial-gradient(circle, var(--planet-blue), var(--nebula-purple));
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.nav-planet:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    opacity: 0.6;
+    font-size: 0.9rem;
+}
