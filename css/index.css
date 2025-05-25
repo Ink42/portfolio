@@ -1,4 +1,4 @@
-
+/* 
 body {
     font-family: monospace;
     max-width: 800px;
@@ -6,9 +6,14 @@ body {
     padding: 20px;
     line-height: 1.6;
     color: #333;
+} */
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Base Theme Variables (light by default) */
 :root {
     --bg-color: #ffffff;
     --text-color: #000000;
@@ -16,7 +21,7 @@ body {
     --nav-border: #eee;
 }
 
-/* Dark Theme Overrides */
+
 body.dark-mode {
     --bg-color: #0d0d1a;
     --text-color: #ffffff;
@@ -24,22 +29,21 @@ body.dark-mode {
     --nav-border: #333;
 }
 
-/* Apply the variables */
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: monospace;
-    max-width: 800px;
+    max-width: 9000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px;
     line-height: 1.6;
 }
 
 nav {
-    padding: 20px 0;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     border-bottom: 1px solid var(--nav-border);
     margin-bottom: 30px;
 }
@@ -71,31 +75,10 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-
-nav {
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #eee;
-    margin-bottom: 30px;
-}
-
 .logo {
     font-size: 26px;
     font-weight: bold;
 }
-
-/* nav a {
-    color: #333;
-    margin-left: 20px;
-    text-decoration: none;
-    font-size: 18px;
-} */
-
-/* nav a:hover {
-    color: #0077cc;
-} */
 
 h1 {
     font-size: 36px;
@@ -156,6 +139,7 @@ footer {
     border-top: 1px solid #eee;
     font-size: 16px;
     color: #666;
+    width: 100%;
 }
 
 
@@ -252,4 +236,24 @@ footer {
     margin-top: 3rem;
     opacity: 0.6;
     font-size: 0.9rem;
+}
+
+  .three-column-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .three-column-row > div {
+    flex: 1;
+    margin: 0 10px;
+  }
+
+.examplebtn {
+  top: 50%;
+  left: 50%;
+  width: 30em;
+  height: 18em;
+  transform: translate(-50%, -50%);
+  border: 1px solid #666;
+  background-color: #b9faac;
+  position: fixed;
 }
