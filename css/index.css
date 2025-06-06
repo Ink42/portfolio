@@ -257,3 +257,9 @@ footer {
   background-color: #b9faac;
   position: fixed;
 }
+
+.contact-padding-space {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
