@@ -1,0 +1,4 @@
+echo "[HOOK] Running prepare-github before push..."
+make prepare-github
+git add index.html
+git commit -m "Auto path rewrite for GitHub Pages Web ($(date '+%Y-%m-%d %H:%M:%S'))" --allow-empty
